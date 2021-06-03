@@ -8,7 +8,7 @@ import "./ImageCard.scss";
 
 const ImageCard = ({ className, imageFileName, imageAlt, header, subheader, extraInfo }) => {
   return (
-    <Card className={clsx("image-card bg-dark text-white text-center", className)}>
+    <Card className={clsx("image-card bg-dark text-top-color text-center", className)}>
       <Image className="image" fileName={imageFileName} alt={imageAlt || header || subheader} />
       <Card.ImgOverlay className="no-padding">
         <Container>

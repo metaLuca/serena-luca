@@ -1,7 +1,7 @@
 ---
-header: "It's Nice To Meet You"
-subheader: "Welcome To Our Studio!"
-imageFileName: "header-bg.jpg"
+header: "18/09/2021 - Agliate"
+subheader: "Siete invitati al nostro matrimonio!"
+imageFileName: "header-bg.jpeg"
 jumpToAnchor: "Services"
 jumpToAnchorText: "Tell Me More"
 ---

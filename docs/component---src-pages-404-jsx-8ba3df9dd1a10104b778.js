@@ -1,0 +1,2 @@
+(self.webpackChunksere_luca=self.webpackChunksere_luca||[]).push([[256],{1657:function(e,t,n){"use strict";n.r(t);var u=n(7294);t.default=function(){return u.createElement(u.Fragment,null,u.createElement("h1",null,"NOT FOUND"),u.createElement("p",null,"You just hit a route that doesn't exist... the sadness."))}}}]);
+//# sourceMappingURL=component---src-pages-404-jsx-8ba3df9dd1a10104b778.js.map

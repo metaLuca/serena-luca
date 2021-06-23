@@ -1,34 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-// import { Button } from "react-bootstrap";
-// import useSmoothScrollTo from "hooks/useSmoothScrollTo";
 import ImageCard from "components/ImageCard";
+import {CalendarButton} from "components/CalendarButton";
 
 const Top = ({ frontmatter }) => {
   if (!frontmatter) {
     return null;
   }
 
-  const { header, subheader, imageFileName/*, jumpToAnchor, jumpToAnchorText*/ } = frontmatter;
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  /*  const scrollToSection = useSmoothScrollTo(jumpToAnchor);
+  const { header, subheader, imageFileName } = frontmatter;
 
-  let extraInfoPart;
-    if (jumpToAnchor && jumpToAnchorText) {
-      extraInfoPart = (
-        <Button size="xl" variant="primary" className="text-uppercase" onClick={scrollToSection}>
-          {jumpToAnchorText}
-        </Button>
-      );
-    }*/
+  const extraInfo = (
+      <CalendarButton />
+  )
 
   return (
     <ImageCard
       imageFileName={imageFileName}
       header={header}
       subheader={subheader}
-      // extraInfo={extraInfoPart}
+      extraInfo={extraInfo}
     />
   );
 };

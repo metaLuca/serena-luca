@@ -4,25 +4,29 @@ import AddToCalendarHOC from "react-add-to-calendar-hoc";
 import {Button} from "react-bootstrap";
 import {SimpleDropdown} from "components/MyDropdown";
 
-const startDatetime = moment().utc().add(2, 'days');
-const endDatetime = startDatetime.clone().add(2, 'hours');
+const startDatetime = moment('2021-09-18 11:00');
+const endDatetime = moment('2021-09-18 18:00');
 const duration = moment.duration(endDatetime.diff(startDatetime)).asHours();
 const event = {
-        description: 'Matrimonio Luca e Serena',
+        title: 'Matrimonio Serena e Luca',
+        location: 'Basilica dei santi Pietro e Paolo, Agliate (MB)',
         duration,
-        endDatetime: endDatetime.format('YYYYMMDDTHHmmssZ'),
-        location: 'Basilica di Agliate (MB)',
         startDatetime: startDatetime.format('YYYYMMDDTHHmmssZ'),
-        title: 'Matrimonio Luca e Serena',
+        endDatetime: endDatetime.format('YYYYMMDDTHHmmssZ'),
+        description: `Sei invitato alla cerimonia di matrimonio di Serena e Luca.
+I parcheggi non sono molti e le strade non sono larghissime. Consigliamo di organizzarvi per fare una macchinata unica.
+Per altre info: <a href="https://sere-luca.netlify.app/">sere-luca.netlify.app</a>`,
 }
 const AddToCalendar = AddToCalendarHOC(Button, SimpleDropdown);
 
-export const CalendarButton = () => (
-    <AddToCalendar
-        title="date"
-        event={event}
-        buttonText="Salva la data"
-        dropdownProps={{'className': 'dropdown-menu'}}
-        linkProps={{'className': 'dropdown-item'}}
-    />
-)
+export const CalendarButton = () => {
+        return (
+            <AddToCalendar
+                title="date"
+                event={event}
+                buttonText="Salva la data"
+                onRequestClose={e => console.log('aaa',e)}
+                linkProps={{className: 'dropdown-item-cal'}}
+            />
+        )
+}

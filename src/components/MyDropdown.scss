@@ -6,3 +6,13 @@
   background-color: #FFF;
   margin: 0 auto;
 }
+.popover {
+  position: relative !important;
+  left: 30px !important;
+  max-width: 160px !important;
+}
+.dropdown-item-cal {
+  display: block;
+  padding: 0.25rem 1.5rem;
+  color: #212529;
+}

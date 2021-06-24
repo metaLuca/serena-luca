@@ -16,20 +16,21 @@ const MyMapComponent = withScriptjs(withGoogleMap((props) =>
         </GoogleMap>
     ))
 
+const  API_KEY = 'AIzaSyCebn0d2bk2M_gMWYsj0RK4LjmwKLoMFp4';
 const Mappa = ({ className = '', frontmatter }) => {
-  if (!frontmatter) {
-    return null;
+    if (!frontmatter) {
+      return null;
+
   }
 
   const { anchor, header: rootHeader, subheader: rootSubHeader, markers = [] } = frontmatter;
-
-  return (
+    return (
     <PageSection className={className + ' fullwidth no-padding'} id={anchor}>
       <Row>
         <SectionHeader header={rootHeader} subheader={rootSubHeader} />
       </Row>
       <MyMapComponent
-          googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
+          googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${API_KEY}v=3.exp&libraries=geometry,drawing,places`}
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={<div style={{ height: `400px` }} />}
           mapElement={<div style={{ height: `100%` }} />}

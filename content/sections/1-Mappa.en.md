@@ -1,8 +1,7 @@
 ---
-anchor: "Services"
-header: "Services"
-subheader: "Lorem ipsum dolor sit amet consectetur."
-services: [
+anchor: "Mappa"
+header: "Come raggiungerci"
+markers: [
   {
     iconName: "ShoppingCartIcon",
     header: "E-Commerce",

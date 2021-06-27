@@ -28,9 +28,6 @@ const Mappa = ({ className = '', frontmatter }) => {
   const { anchor, header: rootHeader, subheader: rootSubHeader, markers = [] } = frontmatter;
     return (
     <PageSection className={className + ' fullwidth no-padding'} id={anchor}>
-      <Row>
-        <SectionHeader header={rootHeader} subheader={rootSubHeader} />
-      </Row>
       <MyMapComponent
           googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${API_KEY}&v=3.exp&libraries=geometry,drawing,places`}
           markers={markers}

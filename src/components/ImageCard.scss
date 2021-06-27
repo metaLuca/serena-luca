@@ -4,6 +4,7 @@
 }
 .img-position img{
   object-position: left;
+  mask-image: linear-gradient(to bottom, #000000, #00000080);
 }
 .image-card {
   height: 491px;

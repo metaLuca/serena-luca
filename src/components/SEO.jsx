@@ -40,6 +40,10 @@ const SEO = ({ lang, description, meta, keywords, title }) => {
           content: metaDescription,
         },
         {
+          name: `viewport`,
+          content: 'initial-scale=1.0, width=device-width',
+        },
+        {
           property: `og:title`,
           content: title,
         },

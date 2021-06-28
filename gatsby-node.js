@@ -60,16 +60,16 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
     `,
       `type Setting {
-        position: [number]
-        zoom: number
+        position: [Float]
+        zoom: Int
         height: String
       }`,
       `type Marker {
-        id: number
+        id: Int
         title: String
         description: String
-        lat: number
-        lng: number
+        lat: Float
+        lng: Float
       }`,
   ];
 

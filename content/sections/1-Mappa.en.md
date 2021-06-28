@@ -3,37 +3,37 @@ anchor: "Mappa"
 header: "Come raggiungerci"
 settings: {
   position: [45.68625, 9.23923],
-  zoom: 17,
-  height: '600px'
+  zoom: 18,
+  height: "600px"
 }
 markers: [
   {
     id: 1,
-    title: "park1",
+    title: "basilica",
     description: "",
-    lat: 45.686383230587936,
-    lng: 9.23732909405798,
+    lat: 45.68627,
+    lng: 9.23917
   },
   {
     id: 2,
-    title: "park1",
+    title: "parcheggio",
     description: "",
-    lat: 45.686383230587936,
-    lng: 9.23732909405798,
+    lat: 45.68660,
+    lng: 9.23715
   },
   {
     id: 3,
-    title: "park1",
-    description: "",
-    lat: 45.686383230587936,
-    lng: 9.23732909405798,
+    title: "parcheggio",
+    description: "strada molto stretta",
+    lat: 45.68544,
+    lng: 9.24107
   },
   {
     id: 4,
-    title: "park1",
+    title: "parcheggio",
     description: "",
-    lat: 45.686383230587936,
-    lng: 9.23732909405798,
+    lat: 45.68859,
+    lng: 9.23778
   }
 ]
 ---

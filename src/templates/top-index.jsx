@@ -99,10 +99,15 @@ export const query = graphql`
             height
           }
           markers {
+            id
             title
             description
             lat
             lng
+            icon {
+              url
+              size
+            }
           }
         }
         fields {

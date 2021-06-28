@@ -18,9 +18,9 @@ const Mappa = ({className = '', frontmatter}) => {
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                {markers.map(({title, description, lat, lng}) =>
-                    <Marker key={title} position={[lat, lng]}>
-                        <Popup>{description}</Popup>
+                {markers.map(({id, title, description, lat, lng}) =>
+                    <Marker key={id} position={[lat, lng]}>
+                        <Popup>{title}-{description}</Popup>
                     </Marker>
                 )}
             </MapContainer>

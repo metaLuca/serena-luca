@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import './Mappa.scss';
 
 import PageSection from "components/PageSection";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
@@ -18,7 +19,7 @@ const Mappa = ({className = '', frontmatter}) => {
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
                 {markers.map(({title, description, lat, lng}) =>
-                    <Marker position={[lat, lng]}>
+                    <Marker key={title} position={[lat, lng]}>
                         <Popup>{description}</Popup>
                     </Marker>
                 )}

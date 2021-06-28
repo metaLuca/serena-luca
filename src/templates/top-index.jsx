@@ -93,6 +93,17 @@ export const query = graphql`
             imageFileName
             subheader
           }
+          settings {
+            position
+            zoom
+            height
+          }
+          markers {
+            title
+            description
+            lat
+            lng
+          }
         }
         fields {
           fileName

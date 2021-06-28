@@ -38,6 +38,8 @@ exports.createSchemaCustomization = ({ actions }) => {
       social: Social
       services: [Service]
       teamMember: [TeamMember]
+      settings: Setting
+      markers: [Marker]
     }`,
     `type TeamMember {
       social: Social
@@ -57,6 +59,18 @@ exports.createSchemaCustomization = ({ actions }) => {
       github: String
     }
     `,
+      `type Setting {
+        position: [number]
+        zoom: number
+        height: String
+      }`,
+      `type Marker {
+        id: number
+        title: String
+        description: String
+        lat: number
+        lng: number
+      }`,
   ];
 
   createTypes(typeDefs);

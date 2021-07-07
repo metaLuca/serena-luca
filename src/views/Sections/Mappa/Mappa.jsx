@@ -11,9 +11,11 @@ const Mappa = ({className = '', frontmatter}) => {
     }
 
     const {anchor, settings, markers = []} = frontmatter;
+    const {position, zoom} = settings;
+    console.log('SETTING', settings, anchor, markers)
     return (
         <PageSection className={className + ' fullwidth no-padding'} id={anchor}>
-            <MapContainer center={settings.position} zoom={13} scrollWheelZoom={true}>
+            <MapContainer center={position} zoom={zoom} scrollWheelZoom={true}>
                 {markers.map(({id, title, description, lat, lng}) =>
                     <Marker key={id} position={[lat, lng]}>
                         <Popup>{title}-{description}</Popup>

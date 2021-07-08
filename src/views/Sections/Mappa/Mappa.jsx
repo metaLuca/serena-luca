@@ -15,6 +15,8 @@ const Mappa = ({className = '', frontmatter}) => {
     console.log('SETTING', settings, anchor, markers)
     return (
         <PageSection className={className + ' fullwidth no-padding'} id={anchor}>
+
+            {typeof window !== 'undefined' &&
             <MapContainer center={position} zoom={zoom} scrollWheelZoom={true}>
                 {markers.map(({id, title, description, lat, lng}) =>
                     <Marker key={id} position={[lat, lng]}>
@@ -22,6 +24,7 @@ const Mappa = ({className = '', frontmatter}) => {
                     </Marker>
                 )}
             </MapContainer>
+            }
         </PageSection>
     );
 };

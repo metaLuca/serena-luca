@@ -136,7 +136,7 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
     <>
       <SEO lang={langKey} title="Top" keywords={keywords} description={description} />
       <Navbar
-        anchors={anchors}
+        anchors={['Mappa']}
         frontmatter={navBarNode.frontmatter}
         extraItems={langSelectorPart}
       />

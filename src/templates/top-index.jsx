@@ -70,6 +70,7 @@ export const query = graphql`
             twitter
           }
           subheader
+          description
           teamMember {
             header
             imageFileName

@@ -24,10 +24,17 @@
       margin-bottom: 25px;
       @include serif-font;
     }
+    .intro-description {
+      font-size: 20px;
+      font-style: italic;
+      line-height: 20px;
+      margin-bottom: 25px;
+      @include serif-font;
+    }
     .intro-heading {
       font-size: 50px;
       font-weight: 700;
-      line-height: 50px;
+      line-height: 30px;
       margin-bottom: 25px;
       @include heading-font;
     }

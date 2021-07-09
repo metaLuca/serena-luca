@@ -9,7 +9,7 @@ const Top = ({ frontmatter }) => {
     return null;
   }
 
-  const { header, subheader, imageFileName } = frontmatter;
+  const { header, subheader, imageFileName, description } = frontmatter;
 
   const extraInfo = (
       <CalendarButton />
@@ -20,6 +20,7 @@ const Top = ({ frontmatter }) => {
       imageFileName={imageFileName}
       header={header}
       subheader={subheader}
+      description={description}
       extraInfo={extraInfo}
     />
   );

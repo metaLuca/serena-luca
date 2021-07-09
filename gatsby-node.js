@@ -68,6 +68,7 @@ exports.createSchemaCustomization = ({ actions }) => {
         id: Int
         title: String
         description: String
+        href: String
         lat: Float
         lng: Float
       }`,

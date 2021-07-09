@@ -102,6 +102,7 @@ export const query = graphql`
             id
             title
             description
+            href
             lat
             lng
           }

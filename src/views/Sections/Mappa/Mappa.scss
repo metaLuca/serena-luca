@@ -1,4 +1,24 @@
 .leaflet-container {
   width: 100%;
-  height: 600px;
+  height: 500px;
+}
+
+.capitalize {
+  text-transform:capitalize;
+}
+
+.description {
+  font-style: italic;
+}
+
+.maps {
+  div {
+    height: 24px;
+    width: 24px;
+
+    img {
+      background: transparent;
+      filter: invert(1);
+    }
+  }
 }

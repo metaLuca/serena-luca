@@ -8,7 +8,7 @@ const useWindowOnScroll = (handleWindowScroll, loadOnceOnMount = true) => {
   }, [handleWindowScroll]);
 
   React.useEffect(() => {
-    if (internalHandleScroll == null || !window) {
+    if (internalHandleScroll == null) {
       return undefined;
     }
 

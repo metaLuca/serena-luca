@@ -10,7 +10,7 @@ markers: [
   {
     id: 1,
     title: "basilica",
-    description: "",
+    description: "Cerimonia ore 11:00",
     href: "https://www.google.com/maps/dir//Basilica+di+Agliate,+Via+Cavour,+28,+20841+Agliate+MB/@45.6862144,9.2371067,17z/data=!3m1!5s0x4786a34c14289711:0x16f7f1cfee63cd5d!4m8!4m7!1m0!1m5!1m1!1s0x4786bcb6b442e50b:0xc4b260e43c91fe55!2m2!1d9.2392954!2d45.6862107",
     lat: 45.68627,
     lng: 9.23917,
@@ -19,7 +19,7 @@ markers: [
   {
     id: 2,
     title: "parcheggio",
-    description: "",
+    description: "Comodo, c'è qualche posto, però si riempie in fretta",
     href: "https://www.google.com/maps/dir//45.686557,9.2371868/@45.6864503,9.2376591,19z/data=!3m1!5s0x4786a34c14289711:0x16f7f1cfee63cd5d!4m2!4m1!3e0",
     lat: 45.68660,
     lng: 9.23715,
@@ -46,7 +46,7 @@ markers: [
   {
     id: 5,
     title: "parcheggio",
-    description: "quello del cimitero",
+    description: "Quello del cimitero. Pochi posti auto ma comodi",
     href: "https://www.google.com/maps/dir//45.687521,9.237525/@45.6875219,9.2369778,173m/data=!3m1!1e3!4m2!4m1!3e0",
     lat: 45.68751,
     lng: 9.23750,

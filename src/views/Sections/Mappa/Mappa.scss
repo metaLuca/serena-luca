@@ -3,12 +3,59 @@
   height: 500px;
 }
 
-.capitalize {
-  text-transform:capitalize;
+.leaflet-popup > .leaflet-popup-content-wrapper{
+  border-radius: 8px;
+  padding: 0;
+  overflow: hidden;
+
+  & .leaflet-popup-content {
+    margin: 0;
+  }
 }
 
-.description {
-  font-style: italic;
+.leaflet-popup-close-button {
+  text-shadow: 1px 1px 6px #bbb9b9bf;
+}
+
+.popup-content {
+  padding: 12px 16px 16px;
+
+  & .buttons {
+    display: flex;
+    float: right;
+    margin-top: -6px;
+    margin-right: -6px;
+  }
+
+  .capitalize {
+    text-transform:capitalize;
+  }
+  .marker-title {
+    font-family: Google Sans,Roboto,Arial,sans-serif;
+    font-weight: bold;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: .00625em;
+    color: #202124;
+    padding: 5px;
+  }
+
+  .description {
+    font-family: Roboto,Arial,sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px;
+
+    line-height: 1rem;
+    font-size: .75rem;
+    letter-spacing: .025em;
+    font-weight: 400;
+
+    & span {
+      text-align: left;
+    }
+  }
 }
 
 .maps {

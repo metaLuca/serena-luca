@@ -51,6 +51,15 @@ markers: [
     lat: 45.68751,
     lng: 9.23750,
     icon: "park"
+  },
+  {
+    id: 6,
+    title: "ricevimento",
+    description: "La stradina che porta alla tenuta è strettina e un po' ripida nell' ultimo tratto. Ma è comunque comoda.",
+    href: "https://www.google.com/maps/dir//Tenuta+Valcurone,+Montevecchia,+LC/@45.7034058,9.3336807,11811m/data=!3m3!1e3!4b1!5s0x4786af9b17ff95cd:0x976bc17d30714ace!4m9!4m8!1m0!1m5!1m1!1s0x4786af9bae2c1fcf:0xdbd373cb6c85fac9!2m2!1d9.3687!2d45.7034111!3e0",
+    lat: 45.703132, 
+    lng: 9.368180,
+    icon: "park"
   }
 ]
 ---

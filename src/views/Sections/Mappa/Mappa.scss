@@ -12,13 +12,17 @@
 }
 
 .maps {
-  div {
-    height: 24px;
-    width: 24px;
+  & > a > div {
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
 
     img {
       background: transparent;
-      filter: invert(1);
+      margin: auto;
+      filter: drop-shadow(2px 2px 2px #808080);
+      height: 28px;
+      width: 28px;
     }
   }
 }

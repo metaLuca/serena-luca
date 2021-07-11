@@ -106,6 +106,7 @@ export const query = graphql`
             href
             lat
             lng
+            icon
           }
         }
         fields {

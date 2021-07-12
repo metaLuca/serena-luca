@@ -39,7 +39,7 @@ const TimelineItem = ({
           {subheaderPart}
         </div>
         <div className="timeline-body">
-          <p className={'text-muted'+hasTooltip ? ' with-tooltip' : ''}>
+          <p className={'text-muted'+(hasTooltip ? ' with-tooltip' : '')}>
             {content}
           </p>
         </div>

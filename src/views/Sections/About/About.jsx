@@ -24,7 +24,7 @@ const About = ({ className, frontmatter }) => {
       <Row>
         <Col lg={12}>
           <ul className="timeline">
-            {timeline.map(({ content, header, imageContent, imageFileName, subheader }, ind) => (
+            {timeline.map(({ content, header, imageContent, imageFileName, subheader, tooltip }, ind) => (
               <TimelineItem
                 invert={ind % 2 === 1}
                 key={header}

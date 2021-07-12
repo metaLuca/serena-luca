@@ -1,34 +1,31 @@
 ---
-anchor: "About"
-header: "About"
-subheader: "Lorem ipsum dolor sit amet consectetur."
+anchor: "Programma"
+header: "Programma"
+subheader: "Orari e informazioni utili"
 timeline: [
   {
-    imageFileName: "about/1.jpg",
-    header: "2009-2011",
-    subheader: "Our Humble Beginnings",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    imageFileName: "about/1.jpeg",
+    header: "11:00 Cerimonia",
+    subheader: "Basilica dei Santi Petro e Paolo, Agliate",
+    content: "indicazioni dalla parrocchia",
+    tooltip: "--"
   },
   {
-    imageFileName: "about/2.jpg",
-    header: "March 2011",
-    subheader: "An Agency is Born",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    imageFileName: "about/2.png",
+    header: "12:30 Ricevimento",
+    subheader: "Tenuta Valcurone, Montevecchia",
+    content: "Menù",
+    tooltip: "--"
   },
   {
-    imageFileName: "about/3.jpg",
-    header: "December 2012",
-    subheader: "Transition to Full Service",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    imageFileName: "about/3.png",
+    header: "19:00 Fine",
+    subheader: "Saluti finali",
+    content: "indicazioni dalla tenuta",
+    tooltip: "--"
   },
   {
-    imageFileName: "about/4.jpg",
-    header: "July 2014",
-    subheader: "Phase Two Expansion",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-  },
-  {
-    imageContent: "Be Part\r\nOf Our\r\nStory!"
+    imageContent: "Ricordatevi\r\ndi darci\r\nconferma!"
   }
 ]
 ---

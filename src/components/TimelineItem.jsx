@@ -11,6 +11,7 @@ const TimelineItem = ({
   imageFileName,
   imageAlt,
   imageContent,
+  tooltip,
   header,
   subheader,
   content,
@@ -52,6 +53,7 @@ TimelineItem.propTypes = {
   header: PropTypes.string,
   subheader: PropTypes.string,
   content: PropTypes.string,
+  tooltip: PropTypes.string
 };
 
 TimelineItem.defaultProps = {
@@ -62,6 +64,7 @@ TimelineItem.defaultProps = {
   header: "",
   subheader: "",
   content: "",
+  tooltip: ""
 };
 
 export default TimelineItem;

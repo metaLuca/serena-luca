@@ -93,6 +93,7 @@ export const query = graphql`
             imageContent
             imageFileName
             subheader
+            tooltip
           }
           settings {
             position
@@ -139,7 +140,7 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
     <>
       <SEO lang={langKey} title="Top" keywords={keywords} description={description} />
       <Navbar
-        anchors={['Mappa']}
+        anchors={['Mappa', 'Programma']}
         frontmatter={navBarNode.frontmatter}
         extraItems={langSelectorPart}
       />

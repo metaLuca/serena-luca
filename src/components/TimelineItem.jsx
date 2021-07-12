@@ -20,7 +20,8 @@ const TimelineItem = ({
   const subheaderPart = subheader ? <h4 className="subheading">{subheader}</h4> : null;
 
   const liClassName = clsx("timeline-item", { "timeline-inverted": invert });
-
+  const hasTooltip = tooltip !== '';
+  // TODO: add tooltip with markdown.
   return (
     <li className={liClassName}>
       <div className="timeline-image">
@@ -38,7 +39,9 @@ const TimelineItem = ({
           {subheaderPart}
         </div>
         <div className="timeline-body">
-          <p className="text-muted">{content}</p>
+          <p className={'text-muted'+hasTooltip ? ' with-tooltip' : ''}>
+            {content}
+          </p>
         </div>
       </div>
     </li>

@@ -41,7 +41,7 @@ export const query = graphql`
           content
           copyright
           header
-          email
+          emails
           imageFileName
           jumpToAnchor
           jumpToAnchorText
@@ -140,7 +140,7 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
     <>
       <SEO lang={langKey} title="Top" keywords={keywords} description={description} />
       <Navbar
-        anchors={['Mappa', 'Programma']} //Contatti
+        anchors={['Mappa', 'Programma', 'Contatti']}
         frontmatter={navBarNode.frontmatter}
         extraItems={langSelectorPart}
       />

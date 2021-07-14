@@ -5,6 +5,7 @@ import clsx from "clsx";
 import Image from "components/Image";
 
 import "./TimelineItem.scss";
+import CollapsibleTimelineContent from "components/CollapsibleTimelineContent";
 
 const TimelineItem = ({
   invert,
@@ -20,8 +21,7 @@ const TimelineItem = ({
   const subheaderPart = subheader ? <h5 className="subheading">{subheader}</h5> : null;
 
   const liClassName = clsx("timeline-item", { "timeline-inverted": invert });
-  const hasTooltip = tooltip !== '';
-  // TODO: add tooltip with markdown.
+
   return (
     <li className={liClassName}>
       <div className="timeline-image">
@@ -39,8 +39,8 @@ const TimelineItem = ({
           {subheaderPart}
         </div>
         <div className="timeline-body">
-          <p className={'text-muted'+(hasTooltip ? ' with-tooltip' : '')}>
-            {content}
+          <p className={'text-muted'}>
+            <CollapsibleTimelineContent content={content} tooltip={tooltip || ''} />
           </p>
         </div>
       </div>

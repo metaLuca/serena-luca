@@ -140,7 +140,7 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
     <>
       <SEO lang={langKey} title="Top" keywords={keywords} description={description} />
       <Navbar
-        anchors={['Mappa', 'Programma']}
+        anchors={['Mappa', 'Programma']} //Contatti
         frontmatter={navBarNode.frontmatter}
         extraItems={langSelectorPart}
       />

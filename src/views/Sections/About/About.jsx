@@ -17,7 +17,7 @@ const About = ({ className, frontmatter }) => {
   const { anchor, header: rootHeader, subheader: rootSubHeader, timeline } = frontmatter;
 
   return (
-    <PageSection className={className} id={anchor}>
+    <PageSection className={className + ' no-padding-top'} id={anchor}>
       <Row>
         <SectionHeader header={rootHeader} subheader={rootSubHeader} />
       </Row>
@@ -32,6 +32,7 @@ const About = ({ className, frontmatter }) => {
                 header={header}
                 subheader={subheader}
                 content={content}
+                tooltip={tooltip}
                 imageContent={
                   imageContent ? (
                     <div dangerouslySetInnerHTML={{ __html: `<h4>${nl2br(imageContent)}</h4>` }} />

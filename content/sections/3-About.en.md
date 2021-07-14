@@ -55,6 +55,10 @@ Aletta di manzo al Nustranel, puré di patate all'olio, indivia brasata
 ###### Sorbetto Limone e Salvia
 
 ###### Torta Millefoglie servita al tavolo
+  
+-- 
+  
+###### N.B. Avvisateci in caso di intolleranze/esigenze alimentari
 "
   },
   {

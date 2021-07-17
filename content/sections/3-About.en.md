@@ -1,7 +1,7 @@
 ---
 anchor: "Programma"
 header: "Programma"
-subheader: "Orari e informazioni utili"
+subheader: "Attenzione: secondo le disposizioni attuali per partecipare al matrimonio è necessario avere un green pass"
 timeline: [
   {
     imageFileName: "about/1.jpeg",

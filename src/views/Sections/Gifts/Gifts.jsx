@@ -43,7 +43,7 @@ const Gifts = ({ className, frontmatter }) => {
   return (
     <PageSection className={className + ' fullwidth less-padding'} id={anchor}>
       <Row className="justify-content-center">
-        <Col lg={8} className="text-center">
+        <Col className="text-center">
           <h2 className="mt-0">{header}</h2>
           <hr className="divider my-4" />
           <p className="text-muted mb-5">{subheader}</p>

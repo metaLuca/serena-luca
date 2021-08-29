@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 
 import { Container, Row, Col } from "react-bootstrap";
 
+import './Footer.scss';
+
 const Footer = ({ props }) => {
 
   return (

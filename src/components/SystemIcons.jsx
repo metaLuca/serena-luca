@@ -7,6 +7,7 @@ import {
   faBars,
   faTimes,
   faGlobe,
+  faPiggyBank
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
@@ -14,6 +15,7 @@ import {
   faLinkedinIn,
   faGithubAlt,
   faMediumM,
+  faPaypal
 } from "@fortawesome/free-brands-svg-icons";
 
 export const PhoneIcon = makeFAIcon(faPhone);
@@ -28,5 +30,8 @@ export const LanguageIcon = makeFAIcon(faGlobe);
 export const TwitterIcon = makeFAIcon(faTwitter);
 export const FacebookIcon = makeFAIcon(faFacebookF);
 export const LinkedinIcon = makeFAIcon(faLinkedinIn);
+
+export const PaypalIcon = makeFAIcon(faPaypal);
+export const PiggyBankIcon = makeFAIcon(faPiggyBank);
 
 export * from "config/CustomIcons";

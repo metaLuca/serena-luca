@@ -2,7 +2,7 @@ import React from 'react'
 import moment from "moment";
 import AddToCalendarHOC from "react-add-to-calendar-hoc";
 import {Button} from "react-bootstrap";
-import {SimpleDropdown} from "components/MyDropdown";
+import {BasicDropdown} from "components/BasicDropdown";
 
 const startDatetime = moment('2021-09-18 11:00');
 const endDatetime = moment('2021-09-18 18:00');
@@ -17,7 +17,7 @@ const event = {
 I parcheggi non sono molti e le strade non sono larghissime. Consigliamo di organizzarvi per fare una macchinata unica.
 Per altre info: <a href="https://sere-luca.netlify.app/">sere-luca.netlify.app</a>`,
 }
-const AddToCalendar = AddToCalendarHOC(Button, SimpleDropdown);
+const AddToCalendar = AddToCalendarHOC(Button, BasicDropdown);
 
 export const CalendarButton = () => {
         return (

@@ -10,17 +10,10 @@ const Contact = ({ className, frontmatter }) => {
     return null;
   }
 
-  const { anchor, header, subheader, telephone, emails } = frontmatter;
+  const { anchor, telephone, emails } = frontmatter;
 
   return (
     <PageSection className={className + ' less-padding'} id={anchor}>
-      {/*<Row className="justify-content-center">
-        <Col lg={8} className="text-center">
-          <h2 className="mt-0">{header}</h2>
-          <hr className="divider my-4" />
-          <p className="text-muted mb-5">{subheader}</p>
-        </Col>
-      </Row>*/}
       <Row>
         <Col lg={4} className="ml-auto text-center">
           <Icon iconName="PhoneIcon" size="3x" className="text-muted mb-3" />

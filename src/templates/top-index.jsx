@@ -34,11 +34,6 @@ export const query = graphql`
         frontmatter {
           brand
           anchor
-          clients {
-            href
-            imageFileName
-          }
-          content
           copyright
           header
           emails
@@ -46,43 +41,10 @@ export const query = graphql`
           jumpToAnchor
           jumpToAnchorText
           menuText
-          portfolios {
-            content
-            extraInfo
-            header
-            subheader
-            imageFileNameDetail
-            imageFileName
-          }
           privacyHref
           privacyText
-          services {
-            content
-            header
-            iconName
-            imageFileName
-          }
-          social {
-            facebook
-            github
-            linkedin
-            medium
-            twitter
-          }
           subheader
           description
-          teamMember {
-            header
-            imageFileName
-            social {
-              facebook
-              github
-              linkedin
-              medium
-              twitter
-            }
-            subheader
-          }
           telephone
           termsHref
           termsText
@@ -94,6 +56,16 @@ export const query = graphql`
             imageFileName
             subheader
             tooltip
+          }
+          iban {
+            description
+            image
+            number
+          }
+          paypal {
+            description
+            image
+            link
           }
           settings {
             position
@@ -140,7 +112,7 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
     <>
       <SEO lang={langKey} title="Top" keywords={keywords} description={description} />
       <Navbar
-        anchors={['Mappa', 'Programma', 'Contatti']}
+        anchors={anchors}
         frontmatter={navBarNode.frontmatter}
         extraItems={langSelectorPart}
       />

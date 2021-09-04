@@ -23,7 +23,8 @@ const Gifts = ({ className, frontmatter }) => {
                     <p className="text-muted iban">{iban.description}</p>
                 </Col>
                 <Col className="text-left">
-                    <p className="text-muted text-uppercase">{iban.number}</p>
+                    <p className="text-muted text-uppercase code">{iban.code}</p>
+                    <p className="text-muted text-uppercase holder">{' - '}{iban.holder}</p>
                 </Col>
             </Row>
             <Row className="justify-content-center">

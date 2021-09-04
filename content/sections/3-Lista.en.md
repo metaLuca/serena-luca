@@ -6,7 +6,8 @@ description: "...ma se vuoi aiutarci a prendere quello che serve per casa:"
 iban: {
     description: "con bonifico:",
     image: "PiggyBankIcon",
-    number: "IT03Z0347501605CC0011016497"
+    holder: "Marcato Luca Maria",
+    code: "IT03Z0347501605CC0011016497"
 }
 paypal: {
     description: "oppure da qui:",

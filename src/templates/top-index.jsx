@@ -60,7 +60,8 @@ export const query = graphql`
           iban {
             description
             image
-            number
+            holder
+            code
           }
           paypal {
             description

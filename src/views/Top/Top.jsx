@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import ImageCard from "components/ImageCard";
-import {CalendarButton} from "components/CalendarButton";
+// import {CalendarButton} from "components/CalendarButton";
 
 const Top = ({ frontmatter }) => {
   if (!frontmatter) {
@@ -11,9 +11,9 @@ const Top = ({ frontmatter }) => {
 
   const { header, subheader, imageFileName, description } = frontmatter;
 
-  const extraInfo = (
-      <CalendarButton />
-  )
+  // const extraInfo = (
+  //     <CalendarButton />
+  // )
 
   return (
     <ImageCard
@@ -21,7 +21,6 @@ const Top = ({ frontmatter }) => {
       header={header}
       subheader={subheader}
       description={description}
-      extraInfo={extraInfo}
     />
   );
 };

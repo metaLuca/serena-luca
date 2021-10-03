@@ -49,6 +49,7 @@ export const query = graphql`
           termsHref
           termsText
           title
+          album
           timeline {
             content
             header

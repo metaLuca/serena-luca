@@ -1,8 +1,8 @@
 ---
 header: "18/09/2021 - Agliate"
-subheader: "Siete invitati al nostro matrimonio!"
-description: "Ore 11:00, Basilica dei Santi Pietro e Paolo"
+subheader: "Grazie mille a tutti"
+description: "per aver condiviso con noi un giorno così importante!!"
 imageFileName: "header-bg.jpeg"
-jumpToAnchor: "Mappa"
+jumpToAnchor: "Foto"
 jumpToAnchorText: "Come raggiungerci"
 ---

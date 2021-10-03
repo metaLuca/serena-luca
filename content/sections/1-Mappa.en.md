@@ -2,8 +2,8 @@
 anchor: "Mappa"
 header: "Come raggiungerci"
 settings: {
-  position: [45.68725, 9.23933],
-  zoom: 16,
+  position: [45.69663, 9.31219],
+  zoom: 13,
   height: "500px"
 }
 markers: [
